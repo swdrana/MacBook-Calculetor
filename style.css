@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  background-color: #595656;
+  margin-top: 50px;
+  width: 230px;
+  height: 320px;
+  border-radius: 10px;
+}
+.control-btn {
+  margin: 7px;
+}
+.btn {
+  border: 0px solid #cf544d;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0px 1px;
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+}
+.btn span {
+  position: absolute;
+  display: none;
+}
+.close-btn {
+  background-color: #ff605c;
+}
+.close-btn span, .min-btn span, .max-btn span {
+  top: -2px;
+  left: 3px;
+}
+.min-btn {
+  background-color: #ffbd44;
+}
+.min-btn span{
+    left: 4px;
+}
+.max-btn {
+  background-color: #00ca4e;
+}
+.max-btn span {
+  top: -1px;
+  left: 2px;
+}
+.control-btn:hover span , .control-btn:hover{
+    display: inline-block;
+    cursor: default;
+}
+
+
+/* button section done ***************************************** */
+.display h1{
+    text-align: right;
+    padding:0px 15px;
+    font-size: 50px;
+    color: white;
+}
+
+
+/* button section done ***************************************** */
+
+.main-btns{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.main-btns button{
+    color: white;
+    text-align: center;
+    border: 1px solid #595656;
+    background-color: #828080;
+    padding: 14px 0px;
+    cursor: default;
+}
+.top-btn{
+    background-color: #696767 !important;
+}
+.spacial-bg-btn{
+    background-color: #FF9E0B!important;
+}
+#zero{
+    border-bottom-left-radius: 9px;
+}
+#equal{
+    border-bottom-right-radius: 9px;
+}
