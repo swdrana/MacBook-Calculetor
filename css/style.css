@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@font-face {
+    font-family: EloquiaText;
+    src: url(../fonts/Typekiln\ -\ EloquiaText-ExtraLight.otf);
+  }
+body{
+    font-family: EloquiaText;
+}
+.desktop{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculetor-body{
+    background-color: #545357;
+    width: 230px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 11px 40px -4px rgba(0, 0, 0, 0.95);
+    border: 1px solid #bdbdbbce;
+}
+
+/* ****************************************
+    Control button style start from here 
+**************************************** */
+
+.control-btn-area{
+    width: 60px;
+}
+.control-btn {
+    height: 12px;
+    width: 12px;
+    position: relative;
+}
+.control-btn::before, .control-btn::after{
+    content: '';
+    width: 2px;
+    height: 65%;
+    background-color: #310a06a4;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    opacity: 0;
+}
+
+
+/* For red button  */
+
+
+.control-btn:nth-child(1){
+    background-color: #ED6A5E;
+}
+.control-btn:nth-child(1)::before{
+    transform:translate(-50% , -50%) rotate(45deg);
+}
+.control-btn:nth-child(1)::after{
+    transform:translate(-50% , -50%) rotate(-45deg);
+}
+
+/* For Yellow Button  */
+
+.control-btn:nth-child(2){
+    background-color: #F4BE4F;
+}
+.control-btn:nth-child(2)::before{
+    width: 0px;
+}
+.control-btn:nth-child(2)::after{
+    transform:translate(-50% , -50%) rotate(90deg);
+}
+
+/* For Green Button  */
+
+.control-btn:nth-child(3){
+    background-color: #61C354;
+}
+.control-btn:nth-child(3)::before{
+    transform: translate(-50% , -50%) rotate(90deg);
+}
+.control-btn:nth-child(3)::after{
+    transform: translate(-50% , -50%);
+}
+
+/* For Button Hover  */
+
+.control-btn-area:hover .control-btn::before, .control-btn-area:hover .control-btn::after{
+    opacity: 1;
+}
+
+
+/* ******************************************
+    Dislplay Section Work Start From Here 
+****************************************** */
+
+.display{
+    font-size: 3.1rem;
+    color: #EDEDEE;
+    text-align: right;
+    margin: 0;
+}
+.all-btn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1px;
+    grid-template-rows: repeat(5,46px);
+}
+.btn{
+    color: #E9E9EB;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: #7E7E80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+}
+.btn:hover{
+    color: #E9E9EB;
+    cursor: default;
+}
+/* .btn:focus{
+    background-color: #fff;
+} */
+.btn:blur{
+    background-color: #61C354;
+}
+
+#zero{
+    display: grid;
+    grid-column:1/3 ;
+    border-bottom-left-radius: 10px;
+}
+#equal{
+    border-bottom-right-radius: 10px;
+}
+.spacial-btn-bg{
+    background-color: #656467;
+}
+.oparator-btn{
+    background-color: #F2A33C;
+}
+
+#pin-item{
+    margin: 0 auto;
+    background-color: #90918f3a;
+    padding: 0px 0px;
+    border-radius: 10px;
+    width: 80%;
+    border: 1px solid rgb(196, 196, 196);
+}
+#pin-item img{
+    width: 50px;
+}
+
+
+
