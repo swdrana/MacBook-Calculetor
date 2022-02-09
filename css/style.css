@@ -119,6 +119,14 @@ body{
     color: #E9E9EB;
     cursor: default;
 }
+.btn:active {
+    opacity: 0.7;
+}
+.btn:focus {
+    /* remove by default bootstrap blue shado when button click */
+    box-shadow: none;
+}
+button:focus {outline:0;}
 /* .btn:focus{
     background-color: #fff;
 } */
