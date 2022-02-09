@@ -92,8 +92,7 @@ body{
 /* ******************************************
     Dislplay Section Work Start From Here 
 ****************************************** */
-.display-area{
-}
+
 .display{
     display: flex;
     align-items: flex-end;
