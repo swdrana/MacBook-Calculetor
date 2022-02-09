@@ -92,8 +92,14 @@ body{
 /* ******************************************
     Dislplay Section Work Start From Here 
 ****************************************** */
-
+.display-area{
+}
 .display{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
     font-size: 3.1rem;
     color: #EDEDEE;
     text-align: right;
