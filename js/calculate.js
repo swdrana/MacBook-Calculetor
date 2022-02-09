@@ -102,14 +102,16 @@ function setDisplay(num){
         display.innerText=num;
     }
 }
-
 //all clear button ok
 const ac = document.getElementById('ac');
-ac.addEventListener('click',function(){
+ac.addEventListener('click',function (){
+    clear();
+});
+function clear(){
     displayNumber = 0;
     setDisplay(displayNumber);
     isDotAvilable = false;
-});
+}
 
 // Plus Minus Button ok 
 const plusMinus = document.getElementById('plus-minus');
