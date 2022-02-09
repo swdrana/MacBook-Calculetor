@@ -155,16 +155,24 @@ button:focus {outline:0;}
 }
 
 #pin-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin: 0 auto;
     background-color: #90918f3a;
     padding: 0px 0px;
     border-radius: 10px;
-    width: 80%;
+    width: 370px;
+    height: 50px;
     border: 1px solid rgb(196, 196, 196);
 }
 #pin-item img{
-    width: 50px;
+    height: 40px ;
 }
 
 
 
+#fun{
+    visibility: hidden;
+}

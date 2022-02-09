@@ -187,33 +187,27 @@ function inputToDisplay(inputString){
             displayNumber = 0;
             oparetor = '+';
             isDotAvilable = false;
-            console.log(inputString);
             break;
         case '-':
             oldNumber = parseFloat(displayNumber);
             displayNumber = 0;
             oparetor = '-';
             isDotAvilable = false;
-            console.log(inputString);
             break;
         case 'x':
             oldNumber = parseFloat(displayNumber);
             displayNumber = 0;
             oparetor = '*';
             isDotAvilable = false;
-            console.log(inputString);
             break;
         case '/':
             oldNumber = parseFloat(displayNumber);
             displayNumber = 0;
             oparetor = '/';
             isDotAvilable = false;
-            console.log(inputString);
             break;
         case '=':
             calculate();
-            console.log(inputString);
-            console.log(inputString);
             break;
         default:
             setDisplay('reload again!');
@@ -231,4 +225,13 @@ function calculate(){
     }
     displayNumber=oldNumber;
     setDisplay(oldNumber);
+}
+let count = 0;
+function macBook(){
+    count++;
+    if(count%2!=0){
+        document.getElementById('fun').style.visibility='visible';
+    }else{
+        document.getElementById('fun').style.visibility='hidden';
+    }
 }
